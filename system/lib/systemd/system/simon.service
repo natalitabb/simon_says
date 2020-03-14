@@ -1,0 +1,11 @@
+[Unit]
+Description=Simon Says Game
+After=multi-user.target
+
+[Service]
+Type=idle
+ExecStart=/home/pi/Workspace/2020_sciencefair_project/simon.sh
+Restart=on-abort
+
+[Install]
+WantedBy=multi-user.target
